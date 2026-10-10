@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Desenvolvimento Web - Semana 01</title>
+</head>
+<body>
+
+    <!-- Cabeçalho do Blog -->
+    <header>
+        <h1>Meu Blog de Desenvolvimento Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#artigos">Artigos</a></li>
+                <li><a href="#inscricao">Inscrição</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main id="inicio">
+        <section id="artigos">
+            <article>
+                <h2>A Importância do HTML Semântico</h2>
+                <p>O HTML semântico dá significado estrutural ao conteúdo da página web, facilitando a compreensão por motores de busca (SEO) e leitores de tela para acessibilidade. Utilizar tags corretas como article, header e footer melhora a manutenibilidade do código.</p>
+                <img src="https://via.placeholder.com/600x300?text=HTML+Semantico" alt="Ilustração representando a estrutura semântica em HTML">
+            </article>
+
+            <article>
+                <h2>Dominando Formulários e Validações</h2>
+                <p>Os formulários são cruciais para a interatividade na web. O entendimento do método GET permite visualizar diretamente como os dados trafegam pela URL, servindo como base fundamental antes de avançarmos para estilos CSS e lógica em JavaScript.</p>
+                <img src="https://via.placeholder.com/600x300?text=Formularios+HTML" alt="Ilustração de formulários de inscrição na web">
+            </article>
+        </section>
+    </main>
+
+    <!-- Barra Lateral com o Formulário de Inscrição -->
+    <aside id="inscricao">
+        <h3>Área de Inscrição</h3>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Cadastre-se na nossa Newsletter</legend>
+                
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" minlength="3" required placeholder="Mínimo de 3 letras">
+                </div>
+
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                </div>
+
+                <div>
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" min="18" max="120" required placeholder="Entre 18 e 120">
+                </div>
+
+                <div>
+                    <label for="assunto">Assunto de interesse:</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="" disabled selected>Selecione um assunto</option>
+                        <option value="html">HTML Semântico</option>
+                        <option value="css">Estilização com CSS</option>
+                        <option value="js">Interações com JavaScript</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="termos" name="termos" required>
+                    <label for="termos">Aceito os termos e condições</label>
+                </div>
+
+                <div>
+                    <button type="submit">Inscrever-se</button>
+                </div>
+            </fieldset>
+        </form>
+    </aside>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Blog Acadêmico. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
